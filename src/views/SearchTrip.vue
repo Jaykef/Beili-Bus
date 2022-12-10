@@ -152,7 +152,7 @@ label {
     vertical-align: middle;
 }
 .price {
-  left: 12px
+  left: 12px;
 }
 @media (max-width: 992px) {
   .col-sm-4 {
