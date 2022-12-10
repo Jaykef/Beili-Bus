@@ -4,18 +4,18 @@
     <form @submit.prevent="search_trip">
       <div class="row align-items-center">
         <div class="col-sm-6">
-          <label>始末站：</label>
+          <label>Route：</label>
           <select class="form-control" v-model="trip">
-            <option value>请选择始末站</option>
+            <option value>Please select route</option>
             <option v-for="item in locations" :value="item.id" v-text="item.description"></option>
           </select>
         </div>
         <div class="col-sm-6">
-          <label>日期：</label>
+          <label>Time：</label>
           <input type="date" class="form-control" v-model="departure_date" />
         </div>
         <label>&nbsp;</label>
-        <button type="submit" class="btn btn-primary">Confirm 确定</button>
+        <button type="submit" class="btn btn-primary">Confirm</button>
       </div>
     </form>
     <hr />
@@ -26,14 +26,14 @@
           <div v-for="(item, index) in available_trips" :key="index" class="trip-card">
               <div class="col-sm-4">
                 <h6>{{ item.description }}</h6>
-                <p>长时间：{{ item.duration }}</p>
+                <p>Time：{{ item.duration }}</p>
               </div>
               <div class="col-sm-4 price">
-                <h6>价格</h6>
+                <h6>Price</h6>
                 <p>￥{{ item.ticket_price }} </p>
               </div>
               <div class="col-sm-4">
-                <button class="btn btn-success btn-sm" @click="chooseTrip(item.id)">选座位</button>
+                <button class="btn btn-success btn-sm" @click="chooseTrip(item.id)">Select</button>
               </div>
               
           </div>
@@ -111,6 +111,9 @@ export default {
 
 
 <style scoped>
+h6 {
+  font-size: 0.8rem;
+}
 p {
   font-size: 14px;
 }
