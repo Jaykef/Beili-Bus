@@ -1,4 +1,4 @@
 # Beili-Bus
 A campus bus booking app 
 
-<img src="./src/assets/img/ss_eng.png" />
+<img src="./src/assets/img/s_eng.png" />
