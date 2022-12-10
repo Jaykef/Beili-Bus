@@ -10,7 +10,7 @@
             class="d-inline-block align-top logo"
             alt
           />
-          北理 Bus
+          BIT Bus
         </a>
         <button
           class="navbar-toggler"
@@ -92,7 +92,7 @@ button :hover {
 .btn-success {
   width: 4rem;
   margin-top: -14px;
-  margin-left: 20px;
+  margin-left: 32px;
   border-radius: 5rem;
 }
 .form-control {
